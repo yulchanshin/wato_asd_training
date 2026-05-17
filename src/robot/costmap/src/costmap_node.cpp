@@ -8,7 +8,7 @@ CostmapNode::CostmapNode() : Node("costmap"), costmap_(robot::CostmapCore(this->
   const double resolution = this->declare_parameter<double>("resolution", 0.1);
   const int width = this->declare_parameter<int>("width", 240);
   const int height = this->declare_parameter<int>("height", 240);
-  const double inflation_radius = this->declare_parameter<double>("inflation_radius", 1.25);
+  const double inflation_radius = this->declare_parameter<double>("inflation_radius", 1.35);
   const int max_cost = this->declare_parameter<int>("max_cost", 100);
 
   costmap_.configure(resolution, width, height, inflation_radius, max_cost);

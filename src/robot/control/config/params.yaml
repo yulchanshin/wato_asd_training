@@ -1,3 +1,10 @@
 # control_node:
 #   ros__parameters:
     
+control:
+  ros__parameters:
+    lookahead_distance: 1.0
+    linear_speed: 0.2
+    goal_tolerance: 0.3
+    max_angular_speed: 1.1
+    control_period_sec: 0.1
