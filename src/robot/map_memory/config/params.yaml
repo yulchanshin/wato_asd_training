@@ -1,3 +1,11 @@
 # map_memory_node:
 #   ros__parameters:
     
+map_memory:
+  ros__parameters:
+    map_resolution: 0.1
+    map_width: 500
+    map_height: 500
+    map_frame: sim_world
+    update_distance: 0.4
+    update_period_sec: 1

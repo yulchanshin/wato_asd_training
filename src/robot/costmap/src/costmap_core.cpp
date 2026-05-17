@@ -23,10 +23,10 @@ namespace robot
 
     bool CostmapCore::worldToGrid(double x, double y, int &gx, int &gy) const
     {
-        gx = static_cast<int>(std::floor(x - origin_x_) / resolution_);
-        gy = static_cast<int>(std::floor(y - origin_y_) / resolution_);
+        gx = static_cast<int>(std::floor((x - origin_x_) / resolution_));
+        gy = static_cast<int>(std::floor((y - origin_y_) / resolution_));
 
-        return (0 <= gx && gx <= width_ && 0 <= gy && gy <= height_);
+        return (0 <= gx && gx < width_ && 0 <= gy && gy < height_);
     }
 
     void CostmapCore::markObstacle(int gx, int gy)
