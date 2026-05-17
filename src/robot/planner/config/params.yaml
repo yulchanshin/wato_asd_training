@@ -1,3 +1,11 @@
 # planner_node:
 #   ros__parameters:
     
+planner:
+  ros__parameters:
+    goal_tolerance: 0.5
+    occupancy_threshold: 50
+    unknown_penalty: 0.5
+    timeout_sec: 30.0
+    timer_period_ms: 500
+    replan_min_interval_sec: 1.0
